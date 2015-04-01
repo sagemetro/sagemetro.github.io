@@ -1,0 +1,68 @@
+<!--!
+@template skeleton.html
+@section RECOMMEND ../_profolio_index/recommend.html
+TITLE_IMAGE images/title-slide-1.jpg
+TITLE_AREA block
+-->
+<style>
+.col-left {
+  width: 70%;
+}
+
+.col-left > .article {
+  padding-right: 20px;
+}
+
+
+.col-right {
+  width: 30%;
+}
+
+.col-right > .card {
+  margin: 2px 4px 30px 10px;
+}
+
+
+.bottom-toolbar {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.article .left-card {
+  margin: 25px 25px 25px 2px;
+  float: left;
+  max-width: 300px;
+}
+
+.article .right-card {
+  margin: 25px 0 25px 25px;
+  float: right;
+  max-width: 300px;
+}
+
+</style>
+
+<div class="title-area" style="display: {{.TITLE_AREA}}">
+  <img src="{{.TITLE_IMAGE}}">
+  <h1>{{.PAGE_TITLE}}</h1>
+</div>
+
+<div class="section">
+
+<div class="col col-left">
+<div class="article">
+{{#INNER_DOCUMENT}}
+</div>
+</div>
+
+<div class="col col-right">
+<div class="card">
+{{#RECOMMEND}}
+</div>
+</div>
+</div>
+<div class="section bottom-toolbar">
+<a href="#">回页首</a>
+</div>
+<div class="section"></div>
+

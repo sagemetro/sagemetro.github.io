@@ -1,0 +1,101 @@
+<!--!
+@template _common/skeleton.html
+@section RIGHT_COL_CONTENT _profolio_index/recommend.html
+@section PROFOLIO_1 _profolio_index/1.html
+@section PROFOLIO_2 _profolio_index/2.html
+PAGE_TITLE 投资案例
+TITLE_IMAGE images/title-slide-2.jpg
+-->
+<style>
+.col-left {
+  width: 70%;
+}
+
+.col-left > .card {
+  margin: 2px 10px 20px 2px;
+}
+
+.col-right {
+  width: 30%;
+}
+
+.col-right > .card {
+  margin: 2px 4px 30px 10px;
+}
+
+
+.profolio-card .text-col {
+  width: 60%;
+}
+
+.profolio-card .profolio-summary > h3 {
+  font-size: 125%;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  border-left: 0.5em solid #b44;
+  padding-left: 0.5em;
+}
+
+.profolio-card .profolio-summary > h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profolio-card .profolio-summary > h3 a {
+  color: inherit;
+}
+
+.profolio-card .profolio-summary > p {
+  margin: 0em 0 1em 0;
+  line-height: 1.75;
+}
+
+.profolio-card .profolio-summary > .more {
+  padding-top: 1em;
+  text-align: right;
+}
+
+.profolio-card .img-col {
+  width: 40%;
+}
+
+.profolio-card .img-col > img {
+  display: block;
+  width: 100%;
+}
+
+</style>
+
+<div class="title-area" style="display: {{.TITLE_AREA}}">
+  <img src="{{.TITLE_IMAGE}}">
+  <h1>{{.PAGE_TITLE}}</h1>
+</div>
+
+<div class="section">
+<div class="col col-left">
+
+<!-- Profolio list -->
+<div class="card profolio-card">
+<div class="section">{{#PROFOLIO_1}}</div>
+<div class="section"></div>
+</div>
+
+<div class="card profolio-card">
+<div class="section">{{#PROFOLIO_2}}</div>
+<div class="section"></div>
+</div>
+
+<!-- End of profolio list -->
+
+</div>
+
+<div class="col col-right">
+<div class="card">
+{{#RIGHT_COL_CONTENT}}
+</div>
+</div>
+
+</div>
+
+<!-- The end -->
+<div class="section"></div>

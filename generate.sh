@@ -1,2 +1,2 @@
 #!/bin/sh
-./tools/candy --output_path=.
+./tools/candy --output_path=. $@

@@ -1,5 +1,5 @@
 <!--!
-@template _common/article-with-recommend.html
+@template ../_common/article-with-recommend.html
 PAGE_TITLE 得克萨斯州物业
 PAGE_IMAGE images/title-slide-2.jpg
 -->

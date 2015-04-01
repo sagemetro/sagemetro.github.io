@@ -10,7 +10,7 @@ PAGE_TITLE 先威简介
 先威将贴近投资伙伴多元化需求，优化投资组合，提供更为创新的投资工具。
 
 <div class="card left-card">
-<img class="header" src="images/profolio-1.jpg">
+<img class="header" src="/images/profolio-1.jpg">
 <div class="label">北京燕莎盛世大厦</div>
 </div>
 

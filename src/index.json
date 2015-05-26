@@ -1,0 +1,9 @@
+{
+  "template": {
+    "base": "_tpl_skeleton",
+    "bind": {
+      "INNER": "_tpl_content"
+    }
+  }
+}
+

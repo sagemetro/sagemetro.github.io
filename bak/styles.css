@@ -1,0 +1,286 @@
+/* Reset for old browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Common style */
+html {
+  font-size: 14px;
+  color: #333;
+  font-family: "Arial", "Source Han Sans CN", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.page {
+  margin: 0 auto;
+  width: 980px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* ========== Grid system ========== */
+.section {
+  position: relative;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+/*  GROUPING  */
+.group:before, .group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+  .col { width: 100% !important; }
+}
+
+/* ========== Header area ========== */
+
+.page-header {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.page-header > .title-panel {
+
+}
+
+.page-header > .title-panel h1 {
+  font-size: 400%;
+  line-height: 1;
+}
+
+.page-header > .title-panel h2 {
+  font-size: 200%;
+  line-height: 1;
+}
+
+.page-header > .menu-bar {
+  width: 100%;
+  font-size: 0;
+}
+
+.page-header > .menu-bar ul {
+  list-style: none;
+}
+
+.page-header > .menu-bar > ul > li {
+  display: inline-block;
+  width: 180px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.page-header > .menu-bar > ul > li:last-child {
+  margin-right: 0;
+}
+
+.page-header > .menu-bar > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 8px 0 4px 0;
+  border-bottom: 4px solid #b33;
+}
+.page-header > .menu-bar > ul >li > a:visited {
+  color: inherit;
+}
+
+.page-header > .menu-bar > ul > li:hover {
+  color: #ffffff;
+  background-color: #b33;
+  font-weight: bold;
+}
+
+.page-header > .menu-bar > ul > li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.page-header > .menu-bar ul.dropdown-menu {
+  z-index: 2;
+  padding-top: 4px;
+  position: absolute;
+  display: none;
+  width: 180px;
+  text-align: center;
+  background-color: #b33;
+  font-weight: normal;
+  color: #f0f0f0;
+}
+
+.page-header ul.dropdown-menu > li > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 14px 0 14px 0;
+}
+
+.page-header ul.dropdown-menu > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-weight: bold;
+}
+
+.page-header > .info-panel {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+}
+
+.info-panel > a {
+  padding-right: 20px;
+}
+
+.info-panel > input {
+  width: 120px;
+}
+
+.page-footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.page-footer .item {
+  padding: 0 20px 0 20px;
+}
+
+/* Common styles for content pages */
+.title-area {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.title-area > img {
+  display: block;
+  width: 100%;
+}
+
+.title-area > h1 {
+  position: absolute;
+  font-size: 300%;
+  left: 1em;
+  bottom: 1em;
+  color: white;
+  text-shadow: 2px 2px 6px #444;
+}
+
+.article > h1 {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 1em 0 1em 0;
+}
+
+.article > h2 {
+  font-size: 175%;
+  font-weight: bold;
+  margin: 1em 0 1em 0;
+}
+
+.article > p {
+  text-indent: 2em;
+  margin: 1em 0 1em 0;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* Card UI */
+
+.card {
+  padding: 10px;
+  background: white;
+  box-shadow: 1px 1px 2px 1px #aaa;
+}
+
+.card > img.header {
+  display: block;
+  width: 100%;
+}
+
+.card > .label {
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+
+.card > h3 {
+  font-size: 125%;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  border-left: 0.5em solid #b44;
+  padding-left: 0.5em;
+}
+
+.card > h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card > h3 a:visited {
+  color: inherit;
+}
+
+.card > .more {
+  margin: 1em 0 0 0;
+  text-align: right;
+}
+
+.card > p {
+  margin: 0 0 1em 0;
+}

@@ -1,0 +1,192 @@
+/* Reset for old browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* ========== Grid system ========== */
+.section {
+  position: relative;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+/*  GROUPING  */
+.group:before, .group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+  .col { width: 100% !important; }
+}
+
+/* ======= page header ==== */
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+.page-header {
+  background-color: #d80c18;
+  width: 100%;
+}
+
+.page-header .page-header-logo {
+  width: 960px;
+  height: 80px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.page-header .page-header-logo img {
+  height: 80px;
+}
+
+.page-header-menu {
+  background-color: #b81c22;
+}
+
+.page-header-menu > .menu {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu .menu-item {
+  display: inline-block;
+  width: 6em;
+  text-align: center;
+  font-size: 16px;
+}
+
+.menu > .menu-item {
+  color: white;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 0.25em;
+  border-right: 1px solid #d80c18;
+}
+
+.menu > .menu-item > .sub-menu {
+  display: none;
+  text-align: left;
+  height: 28px;
+  border-bottom: 1px solid #b81c22;
+  border-left: 1px solid #b81c22;
+  border-right: 1px solid #b81c22;
+  position: absolute;
+  bottom: -29px;
+  left: -1px;
+  width: 960px;
+  background-color: white;
+}
+
+.menu > .menu-item:hover {
+  background-color: white;
+  color: #b81c22;
+}
+
+.menu > .menu-item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu > .menu-item {
+  height: 20px;
+  margin-top: 6px;
+  border-right: 1px solid #b81c22;
+}
+
+.menu-item > a {
+  text-decoration: none;
+}
+
+.page-body {
+  width: 960px;
+  margin: 30px auto;
+}
+
+.property-card {
+  font-size: 14px;
+}
+
+.property-card > .content {
+  margin: 10px;
+}
+
+.property-card .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b81c22;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #b81c22;
+  margin-bottom: 10px;
+}
+
+.property-card .photo {
+  width: 100%;
+}
+
+.property-card .desc {
+  margin-top: 10px;
+}

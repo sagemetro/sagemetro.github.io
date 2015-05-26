@@ -1,0 +1,29 @@
+{
+  "template": {
+    "base": "_tpl_skeleton",
+    "bind": {
+      "INNER": "_tpl_china"
+    }
+  },
+  "page_title": "国内资产",
+
+  "properties": [{
+    "type": "heavy",
+    "name": "燕莎国际",
+    "photo": "resources/profolio-1.jpg",
+    "desc": "blah blah blah",
+    "href": "#",
+    "posX": 700,
+    "posY": 100
+  }, {
+    "type": "heavy",
+    "name": "燕莎国际 - 2",
+    "photo": "resources/profolio-1.jpg",
+    "desc": "blah blah blah",
+    "href": "#",
+    "posX": 300,
+    "posY": 300
+  }]
+}
+
+

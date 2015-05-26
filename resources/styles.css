@@ -97,6 +97,15 @@ a:visited {
   height: 80px;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
+}
+
+.page-header .page-header-logo .toolbar {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  z-index: 1;
+  color: #eee;
 }
 
 .page-header .page-header-logo img {
@@ -131,7 +140,6 @@ a:visited {
 .menu > .menu-item > .sub-menu {
   display: none;
   text-align: left;
-  height: 28px;
   border-bottom: 1px solid #b81c22;
   border-left: 1px solid #b81c22;
   border-right: 1px solid #b81c22;
@@ -154,6 +162,7 @@ a:visited {
 .sub-menu > .menu-item {
   height: 20px;
   margin-top: 6px;
+  margin-bottom: 2px;
   border-right: 1px solid #b81c22;
 }
 

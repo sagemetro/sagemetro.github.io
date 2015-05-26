@@ -1,5 +1,5 @@
 {
   "bind": {
-    "HEADER": "_tpl_header"
+    "HEADER": "_tpl/header"
   }
 }

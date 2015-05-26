@@ -1,0 +1,21 @@
+{
+  "page_title": "燕莎盛世大厦",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/propertydetail"
+    }
+  },
+  "property": {
+    "name": "燕莎盛世大厦",
+    "address": "北三环中路23号，马甸桥的东600米，路北。",
+    "operation": "平均租金：9元/天.平米，现有年租金5500万元，预计改造租金可进一步上升。",
+    "desc": "项目地处北三环中路主路显赫位置，位于北三环马甸桥及安华桥中间位置，南侧紧邻北三环主路，楼体展示效果极佳。",
+    "photos": [
+      "/resources/profolio/yansha/1.png",
+      "/resources/profolio/yansha/2.png",
+      "/resources/profolio/yansha/3.png",
+      "/resources/profolio/yansha/4.png"
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+<style>
+.page-body .section > .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b81c22;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #b81c22;
+  margin-bottom: 10px;
+}
+
+.property-meta {
+  padding-left: 1em;
+}
+
+.property-meta-table td {
+  vertical-align: top;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.property-meta .property-meta-table td.label {
+  font-weight: bold;
+  color: #b81c22;
+  width: 6em;
+}
+
+.property-meta .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.property-meta .property-desc {
+  margin-top: 1em;
+}
+
+.article p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-indent: 1em;
+}
+
+.photo-slide-container {
+  overflow: visible;
+  position: relative;
+}
+
+.photo-slide {
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
+.photo-slide-visible {
+  opacity: 1;
+}
+
+.photo-slide-invisible {
+  opacity: 0;
+}
+</style>
+
+<div class="section">
+<h2 class="title">项目简介</h2>
+<div class="col" style="width:60%; padding-bottom:2em;">
+  <div class="photo-slide-container"></div>
+</div>
+
+<div class="col" style="width:40%;">
+<div class="property-meta">
+  <div class="title">{{.property.name}}</div>
+  <table class="property-meta-table">
+  <tr>
+  <td class="label">项目位置</td>
+  <td class="value">{{.property.address}}</td>
+  </tr>
+
+  <tr>
+  <td class="label">运作方式</td>
+  <td class="value">{{.property.operation}}</td>
+  </tr>
+  </table>
+
+  <p class="property-desc">{{.property.desc}}</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2 class="title">项目详情</h2>
+<div class="article">
+{{.content}}
+</div>
+</div>
+
+<div class="section"></div>
+
+<script>
+(function() {
+  var createSlide = function(container, photos, opts) {
+    container.style.width = opts.width + 'px';
+    container.style.height = opts.height + 'px';
+    var slideList = [];
+    var currIdx = 0;
+    for (var i = 0; i < photos.length; i++) {
+      var photo = photos[i];
+
+      var slideDom = document.createElement('DIV');
+      container.appendChild(slideDom);
+      slideDom.style.background =
+          'url(' + photo + ') no-repeat center center';
+      slideDom.style.backgroundSize = 'contain';
+      slideDom.style.width = opts.width + 'px';
+      slideDom.style.height = opts.height + 'px';
+      slideDom.className = 'photo-slide photo-slide-invisible';
+      slideList.push(slideDom);
+    }
+
+    slideList[currIdx].className = 'photo-slide photo-slide-visible';
+    window.setInterval(function() {
+      slideList[currIdx].className = 'photo-slide photo-slide-invisible';
+      currIdx = (currIdx + 1) % slideList.length;
+      slideList[currIdx].className = 'photo-slide photo-slide-visible';
+    }, opts.duration);
+  }
+
+  var property = {{.property}};
+  createSlide(
+      document.querySelector('.photo-slide-container'), property['photos'], {
+        'width': 500,
+        'height': 300,
+        'duration': 3000,
+      });
+})();
+</script>

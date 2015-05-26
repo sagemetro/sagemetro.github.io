@@ -44,20 +44,28 @@
 <img src="resources/beijing-map.jpg">
 </div>
 
-<div class="prop-section col col-1-1 ">
-<h2 class="title">&mdash; 重资产 &mdash;</h2>
+{{ $meta := import "_meta" }}
 
-<div class="section">
-{{range .properties}}
-  {{if eq .type "heavy" }}
-    <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
+<div class="prop-section col col-1-1 ">
+  <h2 class="title">&mdash; 重资产 &mdash;</h2>
+  <div class="section">
+  {{range $meta.chinaProperties}}
+    {{if eq .type "heavy" }}
+      <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
+    {{end}}
   {{end}}
-{{end}}
-</div>
+  </div>
 </div>
 
 <div class="prop-section col col-1-1 ">
-<h2 class="title">&mdash; 轻资产 &mdash;</h2>
+  <h2 class="title">&mdash; 轻资产 &mdash;</h2>
+  <div class="section">
+  {{range $meta.chinaProperties}}
+    {{if eq .type "light" }}
+      <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
+    {{end}}
+  {{end}}
+  </div>
 </div>
 
 
@@ -68,7 +76,7 @@
 
 <script>
 (function() {
-  var properties = {{.properties}};
+  var properties = {{$meta.chinaProperties}};
   var map = document.querySelector('.map');
   for (var i = 0; i < properties.length; i++) {
     var prop = properties[i];

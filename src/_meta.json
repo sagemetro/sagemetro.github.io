@@ -1,0 +1,37 @@
+{
+  "menu": [{
+    "title": "首页",
+    "href": "#"
+  }, {
+    "title": "国内资产",
+    "href": "/china.html",
+    "submenu": [{
+      "title": "重资产",
+      "href": "#"
+    }, {
+      "title": "轻资产",
+      "href": "#"
+    }]
+  }, {
+    "title": "国外资产",
+    "href": "#"
+  }],
+
+  "chinaProperties": [{
+    "type": "heavy",
+    "name": "燕莎盛世大厦",
+    "photo": "/resources/profolio/yansha/1.png",
+    "desc": "北三环中路23号，马甸桥的东600米，路北。",
+    "href": "/profolio/yansha.html",
+    "posX": 700,
+    "posY": 100
+  }, {
+    "type": "heavy",
+    "name": "燕莎国际 - 2",
+    "photo": "/resources/profolio-1.jpg",
+    "desc": "blah blah blah",
+    "href": "#",
+    "posX": 300,
+    "posY": 300
+  }]
+}

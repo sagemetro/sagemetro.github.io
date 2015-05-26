@@ -1,5 +1,5 @@
 {
   "bind": {
-    "PROPERTY_CARD": "_tpl_propertycard"
+    "PROPERTY_CARD": "_tpl/propertycard"
   }
 }

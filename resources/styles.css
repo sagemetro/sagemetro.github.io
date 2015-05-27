@@ -67,8 +67,25 @@ footer, header, hgroup, menu, nav, section {
   width: 25%;
 }
 
+.col-1-5 {
+  width: 20%;
+}
+
+.col-1-6 {
+  width: 16.666%;
+}
+
+
 @media only screen and (max-width: 480px) {
   .col { width: 100% !important; }
+}
+
+/* ======= page footer ==== */
+.page-footer {
+  padding-top: 3em;
+  margin-bottom: 1em;
+  color: #999;
+  text-align: center;
 }
 
 /* ======= page header ==== */
@@ -180,7 +197,7 @@ a:visited {
 }
 
 .property-card > .content {
-  margin: 10px;
+  margin: 20px;
 }
 
 .property-card .title {

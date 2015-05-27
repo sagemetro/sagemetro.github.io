@@ -37,7 +37,6 @@
   color: white;
   font-weight: bold;
 }
-
 </style>
 
 <div class="map col col-1-1">
@@ -48,9 +47,10 @@
 
 <div class="prop-section col col-1-1 ">
   <h2 class="title">&mdash; 重资产 &mdash;</h2>
+  <a name="heavy"></a>
   <div class="section">
-  {{range $meta.chinaProperties}}
-    {{if eq .type "heavy" }}
+  {{range $meta.profolio}}
+    {{if and (eq .type "heavy") (eq .zone "china") }}
       <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
     {{end}}
   {{end}}
@@ -59,9 +59,10 @@
 
 <div class="prop-section col col-1-1 ">
   <h2 class="title">&mdash; 轻资产 &mdash;</h2>
+  <a name="light"></a>
   <div class="section">
-  {{range $meta.chinaProperties}}
-    {{if eq .type "light" }}
+  {{range $meta.profolio}}
+    {{if and (eq .type "light") (eq .zone "china") }}
       <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
     {{end}}
   {{end}}
@@ -76,11 +77,11 @@
 
 <script>
 (function() {
-  var properties = {{$meta.chinaProperties}};
+  var properties = {{$meta.profolio}};
   var map = document.querySelector('.map');
   for (var i = 0; i < properties.length; i++) {
     var prop = properties[i];
-    if (prop['posX'] == null) {
+    if (prop['zone'] != 'china' || prop['posX'] == null) {
       continue;
     }
     var pointer = document.querySelector('#template .map-pointer').cloneNode(true);

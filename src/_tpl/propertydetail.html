@@ -5,7 +5,7 @@
   color: #b81c22;
   padding-bottom: 2px;
   border-bottom: 1px dotted #b81c22;
-  margin-bottom: 10px;
+  margin-bottom: 1.5em;
 }
 
 .property-meta {
@@ -38,6 +38,16 @@
   margin-top: 1em;
   margin-bottom: 1em;
   text-indent: 1em;
+  line-height: 1.5;
+}
+
+.article img {
+  max-width: 60%;
+}
+
+.article h3 {
+  font-size: 125%;
+  font-weight: bold;
 }
 
 .photo-slide-container {
@@ -60,6 +70,20 @@
 .photo-slide-invisible {
   opacity: 0;
 }
+
+.article {
+  padding-bottom: 2em;
+}
+
+.property-card .content {
+  margin: 10px;
+}
+
+.property-card .title {
+  font-size: 14px;
+  border-bottom: none;
+}
+
 </style>
 
 <div class="section">
@@ -81,6 +105,12 @@
   <td class="label">运作方式</td>
   <td class="value">{{.property.operation}}</td>
   </tr>
+
+  <tr>
+  <td class="label">建筑面积</td>
+  <td class="value">{{.property.size}}</td>
+  </tr>
+
   </table>
 
   <p class="property-desc">{{.property.desc}}</p>
@@ -94,6 +124,16 @@
 <div class="article">
 {{.content}}
 </div>
+</div>
+
+<div class="section">
+  <h2 class="title">全部项目</h2>
+  {{ $meta := import "_meta" }}
+  <div>
+  {{range $meta.profolio}}
+    <div class="col col-1-6">{{template "PROPERTY_CARD" .}}</div>
+  {{end}}
+  </div>
 </div>
 
 <div class="section"></div>
@@ -120,11 +160,13 @@
     }
 
     slideList[currIdx].className = 'photo-slide photo-slide-visible';
-    window.setInterval(function() {
-      slideList[currIdx].className = 'photo-slide photo-slide-invisible';
-      currIdx = (currIdx + 1) % slideList.length;
-      slideList[currIdx].className = 'photo-slide photo-slide-visible';
-    }, opts.duration);
+    if (slideList.length > 1) {
+      window.setInterval(function() {
+        slideList[currIdx].className = 'photo-slide photo-slide-invisible';
+        currIdx = (currIdx + 1) % slideList.length;
+        slideList[currIdx].className = 'photo-slide photo-slide-visible';
+      }, opts.duration);
+    }
   }
 
   var property = {{.property}};

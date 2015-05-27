@@ -1,37 +1,75 @@
 {
   "menu": [{
     "title": "首页",
-    "href": "#"
+    "href": "/"
   }, {
     "title": "国内资产",
     "href": "/china.html",
     "submenu": [{
       "title": "重资产",
-      "href": "#"
+      "href": "/china.html#heavy"
     }, {
       "title": "轻资产",
-      "href": "#"
+      "href": "/china.html#light"
     }]
   }, {
     "title": "国外资产",
-    "href": "#"
+    "href": "/profolio/texas.html"
   }],
 
-  "chinaProperties": [{
+  "profolio": [{
     "type": "heavy",
-    "name": "燕莎盛世大厦",
-    "photo": "/resources/profolio/yansha/1.png",
-    "desc": "北三环中路23号，马甸桥的东600米，路北。",
-    "href": "/profolio/yansha.html",
-    "posX": 700,
-    "posY": 100
-  }, {
-    "type": "heavy",
-    "name": "燕莎国际 - 2",
-    "photo": "/resources/profolio-1.jpg",
-    "desc": "blah blah blah",
-    "href": "#",
+    "zone": "china",
+    "name": "北京辉盛庭国际公寓",
+    "photo": "/resources/profolio/huishengting/logo.jpg",
+    "desc": "朝阳区东四环中路58号",
+    "href": "/profolio/huishengting.html",
     "posX": 300,
     "posY": 300
+  }, {
+    "type": "heavy",
+    "zone": "china",
+    "name": "燕莎盛世大厦",
+    "photo": "/resources/profolio/yansha/logo.jpg",
+    "desc": "北三环中路23号",
+    "href": "/profolio/yansha.html",
+    "posX": 500,
+    "posY": 80
+  }, {
+    "type": "light",
+    "zone": "china",
+    "name": "宏天商务楼",
+    "photo": "/resources/profolio/hongtian/logo.jpg",
+    "desc": "东城区东直门北二里44号迆南",
+    "href": "/profolio/hongtian.html",
+    "posX": 400,
+    "posY": 320
+  }, {
+    "type": "light",
+    "zone": "china",
+    "name": "彭胜医院",
+    "photo": "/resources/profolio/pengsheng/logo.jpg",
+    "desc": "东城区天坛东路66号",
+    "href": "/profolio/pengsheng.html",
+    "posX": 500,
+    "posY": 200
+  }, {
+    "type": "light",
+    "zone": "china",
+    "name": "信通大厦",
+    "photo": "/resources/profolio/xintong/logo.jpg",
+    "desc": "东城区北京站东街8号",
+    "href": "/profolio/xintong.html",
+    "posX": 600,
+    "posY": 300
+  }, {
+    "type": "light",
+    "zone": "china",
+    "name": "双泉堡甲十号",
+    "photo": "/resources/profolio/shuangquanpu/logo.jpg",
+    "desc": "朝阳区双泉堡甲十号楼",
+    "href": "/profolio/shuangquanpu.html",
+    "posX": 700,
+    "posY": 250
   }]
 }

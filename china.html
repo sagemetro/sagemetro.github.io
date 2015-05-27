@@ -8,7 +8,7 @@
 <body>
 <div class="page-header">
 <div class="page-header-logo">
-<img src="/resources/sagemetro.png">
+<a href="/"><img src="/resources/sagemetro.png"></a>
 <div class="toolbar">
 <a href="#">中</a> | <a href="#">EN</a>
 </div>
@@ -18,7 +18,7 @@
 
 
 <li class="menu-item">
-  <a class="menu-title" href=#>首页</a>
+  <a class="menu-title" href=/>首页</a>
   
 </li>
 
@@ -27,16 +27,16 @@
   
     <ul class="sub-menu">
       
-      <li class="menu-item"><a class="menu-title" href=#>重资产</a></li>
+      <li class="menu-item"><a class="menu-title" href=/china.html#heavy>重资产</a></li>
       
-      <li class="menu-item"><a class="menu-title" href=#>轻资产</a></li>
+      <li class="menu-item"><a class="menu-title" href=/china.html#light>轻资产</a></li>
       
     </ul>
   
 </li>
 
 <li class="menu-item">
-  <a class="menu-title" href=#>国外资产</a>
+  <a class="menu-title" href=/profolio/texas.html>国外资产</a>
   
 </li>
 
@@ -86,7 +86,6 @@
   color: white;
   font-weight: bold;
 }
-
 </style>
 
 <div class="map col col-1-1">
@@ -97,14 +96,15 @@
 
 <div class="prop-section col col-1-1 ">
   <h2 class="title">&mdash; 重资产 &mdash;</h2>
+  <a name="heavy"></a>
   <div class="section">
   
     
       <div class="col col-1-4"><div class="property-card">
 <div class="content">
-<h2 class="title"><a href=/profolio/yansha.html>燕莎盛世大厦</a></h2>
-<div><a href=/profolio/yansha.html><img class="photo" src=/resources/profolio/yansha/1.png></a></div>
-<div class="desc">北三环中路23号，马甸桥的东600米，路北。</div>
+<h2 class="title"><a href=/profolio/huishengting.html>北京辉盛庭国际公寓</a></h2>
+<div><a href=/profolio/huishengting.html><img class="photo" src=/resources/profolio/huishengting/logo.jpg></a></div>
+<div class="desc">朝阳区东四环中路58号</div>
 </div>
 </div>
 </div>
@@ -113,12 +113,20 @@
     
       <div class="col col-1-4"><div class="property-card">
 <div class="content">
-<h2 class="title"><a href=#>燕莎国际 - 2</a></h2>
-<div><a href=#><img class="photo" src=/resources/profolio-1.jpg></a></div>
-<div class="desc">blah blah blah</div>
+<h2 class="title"><a href=/profolio/yansha.html>燕莎盛世大厦</a></h2>
+<div><a href=/profolio/yansha.html><img class="photo" src=/resources/profolio/yansha/logo.jpg></a></div>
+<div class="desc">北三环中路23号</div>
 </div>
 </div>
 </div>
+    
+  
+    
+  
+    
+  
+    
+  
     
   
   </div>
@@ -126,10 +134,55 @@
 
 <div class="prop-section col col-1-1 ">
   <h2 class="title">&mdash; 轻资产 &mdash;</h2>
+  <a name="light"></a>
   <div class="section">
   
     
   
+    
+  
+    
+      <div class="col col-1-4"><div class="property-card">
+<div class="content">
+<h2 class="title"><a href=/profolio/hongtian.html>宏天商务楼</a></h2>
+<div><a href=/profolio/hongtian.html><img class="photo" src=/resources/profolio/hongtian/logo.jpg></a></div>
+<div class="desc">东城区东直门北二里44号迆南</div>
+</div>
+</div>
+</div>
+    
+  
+    
+      <div class="col col-1-4"><div class="property-card">
+<div class="content">
+<h2 class="title"><a href=/profolio/pengsheng.html>彭胜医院</a></h2>
+<div><a href=/profolio/pengsheng.html><img class="photo" src=/resources/profolio/pengsheng/logo.jpg></a></div>
+<div class="desc">东城区天坛东路66号</div>
+</div>
+</div>
+</div>
+    
+  
+    
+      <div class="col col-1-4"><div class="property-card">
+<div class="content">
+<h2 class="title"><a href=/profolio/xintong.html>信通大厦</a></h2>
+<div><a href=/profolio/xintong.html><img class="photo" src=/resources/profolio/xintong/logo.jpg></a></div>
+<div class="desc">东城区北京站东街8号</div>
+</div>
+</div>
+</div>
+    
+  
+    
+      <div class="col col-1-4"><div class="property-card">
+<div class="content">
+<h2 class="title"><a href=/profolio/shuangquanpu.html>双泉堡甲十号</a></h2>
+<div><a href=/profolio/shuangquanpu.html><img class="photo" src=/resources/profolio/shuangquanpu/logo.jpg></a></div>
+<div class="desc">朝阳区双泉堡甲十号楼</div>
+</div>
+</div>
+</div>
     
   
   </div>
@@ -143,11 +196,11 @@
 
 <script>
 (function() {
-  var properties = [{"desc":"北三环中路23号，马甸桥的东600米，路北。","href":"/profolio/yansha.html","name":"燕莎盛世大厦","photo":"/resources/profolio/yansha/1.png","posX":700,"posY":100,"type":"heavy"},{"desc":"blah blah blah","href":"#","name":"燕莎国际 - 2","photo":"/resources/profolio-1.jpg","posX":300,"posY":300,"type":"heavy"}];
+  var properties = [{"desc":"朝阳区东四环中路58号","href":"/profolio/huishengting.html","name":"北京辉盛庭国际公寓","photo":"/resources/profolio/huishengting/logo.jpg","posX":300,"posY":300,"type":"heavy","zone":"china"},{"desc":"北三环中路23号","href":"/profolio/yansha.html","name":"燕莎盛世大厦","photo":"/resources/profolio/yansha/logo.jpg","posX":500,"posY":80,"type":"heavy","zone":"china"},{"desc":"东城区东直门北二里44号迆南","href":"/profolio/hongtian.html","name":"宏天商务楼","photo":"/resources/profolio/hongtian/logo.jpg","posX":400,"posY":320,"type":"light","zone":"china"},{"desc":"东城区天坛东路66号","href":"/profolio/pengsheng.html","name":"彭胜医院","photo":"/resources/profolio/pengsheng/logo.jpg","posX":500,"posY":200,"type":"light","zone":"china"},{"desc":"东城区北京站东街8号","href":"/profolio/xintong.html","name":"信通大厦","photo":"/resources/profolio/xintong/logo.jpg","posX":600,"posY":300,"type":"light","zone":"china"},{"desc":"朝阳区双泉堡甲十号楼","href":"/profolio/shuangquanpu.html","name":"双泉堡甲十号","photo":"/resources/profolio/shuangquanpu/logo.jpg","posX":700,"posY":250,"type":"light","zone":"china"}];
   var map = document.querySelector('.map');
   for (var i = 0; i < properties.length; i++) {
     var prop = properties[i];
-    if (prop['posX'] == null) {
+    if (prop['zone'] != 'china' || prop['posX'] == null) {
       continue;
     }
     var pointer = document.querySelector('#template .map-pointer').cloneNode(true);
@@ -162,6 +215,10 @@
 })();
 </script>
 
+</div>
+
+<div class="page-footer">
+<a href="#">先威投资公司</a>　|　京ICP备XXXXXXXX号-1　|　京公网安备11010502026550
 </div>
 
 </body>

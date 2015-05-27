@@ -1,0 +1,5 @@
+{
+  "bind": {
+    "PROPERTY_CARD": "_tpl/propertycard"
+  }
+}

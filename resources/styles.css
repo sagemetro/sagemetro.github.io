@@ -122,6 +122,26 @@ a:visited {
   height: 60px;
 }
 
+.page-header-logo > .search-box {
+  position: absolute;
+  right: 0;
+  top: 1em;
+}
+
+.page-header-logo > .search-box > .label {
+  color: white;
+  padding-right: 0.5em;
+}
+
+.page-header-logo > .search-box > input {
+  border: none;
+  width: 15em;
+}
+
+.page-header-logo > .search-box > input:focus {
+  border: none;
+}
+
 .page-header-menu {
   background-color: #b81c22;
 }

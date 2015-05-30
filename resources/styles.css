@@ -126,7 +126,8 @@ a:visited {
 }
 
 .page-header .page-header-logo img {
-  height: 80px;
+  padding-top: 10px;
+  height: 60px;
 }
 
 .page-header-menu {

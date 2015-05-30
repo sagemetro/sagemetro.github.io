@@ -117,14 +117,6 @@ a:visited {
   position: relative;
 }
 
-.page-header .page-header-logo .toolbar {
-  position: absolute;
-  top: 1em;
-  right: 0;
-  z-index: 1;
-  color: #eee;
-}
-
 .page-header .page-header-logo img {
   padding-top: 10px;
   height: 60px;

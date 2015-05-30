@@ -119,12 +119,14 @@
 </div>
 </div>
 
+{{if .content}}
 <div class="section">
-<h2 class="title">项目详情</h2>
-<div class="article">
-{{.content}}
+  <h2 class="title">项目详情</h2>
+  <div class="article">
+  {{.content}}
+  </div>
 </div>
-</div>
+{{end}}
 
 <div class="section">
   <h2 class="title">全部项目</h2>

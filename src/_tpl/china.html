@@ -45,8 +45,8 @@
 {{ $meta := import "_meta" }}
 
 <div class="prop-section col col-1-1 ">
-  <h2 class="title">&mdash; 重资产 &mdash;</h2>
   <a name="heavy"></a>
+  <h2 class="title">&mdash; 重资产 &mdash;</h2>
   <div class="section">
   {{range $meta.profolio}}
     {{if and (eq .type "heavy") (eq .zone "china") }}
@@ -57,8 +57,8 @@
 </div>
 
 <div class="prop-section col col-1-1 ">
-  <h2 class="title">&mdash; 轻资产 &mdash;</h2>
   <a name="light"></a>
+  <h2 class="title">&mdash; 轻资产 &mdash;</h2>
   <div class="section">
   {{range $meta.profolio}}
     {{if and (eq .type "light") (eq .zone "china") }}

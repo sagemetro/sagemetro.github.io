@@ -133,7 +133,7 @@ a:visited {
   padding-right: 0.5em;
 }
 
-.page-header-logo > .search-box > input {
+.page-header-logo > .search-box > input.search-box-input {
   border: none;
   width: 15em;
 }

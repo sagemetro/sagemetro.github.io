@@ -27,8 +27,8 @@
     "photo": "/resources/profolio/huishengting/logo.jpg",
     "desc": "朝阳区东四环中路58号",
     "href": "/profolio/huishengting.html",
-    "posX": 718,
-    "posY": 255
+    "posX": 766,
+    "posY": 325
   }, {
     "type": "heavy",
     "zone": "china",
@@ -36,8 +36,8 @@
     "photo": "/resources/profolio/yansha/logo.jpg",
     "desc": "北三环中路23号",
     "href": "/profolio/yansha.html",
-    "posX": 436,
-    "posY": 73
+    "posX": 502,
+    "posY": 158
   }, {
     "type": "light",
     "zone": "china",
@@ -45,8 +45,8 @@
     "photo": "/resources/profolio/hongtian/logo.jpg",
     "desc": "东城区东直门北二里44号迆南",
     "href": "/profolio/hongtian.html",
-    "posX": 581,
-    "posY": 163
+    "posX": 641,
+    "posY": 234
   }, {
     "type": "light",
     "zone": "china",
@@ -54,8 +54,8 @@
     "photo": "/resources/profolio/pengsheng/logo.jpg",
     "desc": "东城区天坛东路66号",
     "href": "/profolio/pengsheng.html",
-    "posX": 527,
-    "posY": 350
+    "posX": 593,
+    "posY": 445
   }, {
     "type": "light",
     "zone": "china",
@@ -63,8 +63,8 @@
     "photo": "/resources/profolio/xintong/logo.jpg",
     "desc": "东城区北京站东街8号",
     "href": "/profolio/xintong.html",
-    "posX": 559,
-    "posY": 301
+    "posX": 610,
+    "posY": 388
   }, {
     "type": "light",
     "zone": "china",
@@ -72,7 +72,7 @@
     "photo": "/resources/profolio/shuangquanpu/logo.jpg",
     "desc": "朝阳区双泉堡甲十号楼",
     "href": "/profolio/shuangquanpu.html",
-    "posX": 427,
-    "posY": 30
+    "posX": 460,
+    "posY": 45
   }]
 }

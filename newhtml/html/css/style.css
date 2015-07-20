@@ -421,13 +421,13 @@ background: url('../images/Rectangle56.png') no-repeat;
 margin: 0 auto;
 background-size: 100% 100%;
 padding: 42px 46px;
-margin-top: -187px;
+margin-top: -199px;
 position: relative;
 display: block;
 
 }
 .detail {
-padding: 0 46px;
+padding: 15px 46px 0;
 }
 
 .inner_desc  p.comtitle,.inner_desc .part2 .title,.pro_content .title {

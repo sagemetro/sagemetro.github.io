@@ -45,6 +45,14 @@ function init() {
 		}
 	})
 	
+	$('.head .navigation ul li').click(function(e){
+		var index = $(this).index();
+		if(index == 0){
+			window.location.href='http://'+window.location.host+'/newhtml/html/index.html';
+		}
+		
+	})
+	
 	$('.pro_content .proimg li,.navlignt li,.navheavy li').click(function(e){
 		var dataid = $(this).attr('data-id');
 		window.location.href='http://'+window.location.host+'/newhtml/html/'+dataid+'.html';

@@ -419,21 +419,21 @@ width: 771px;
 min-height: 385px;
 background: url('../images/Rectangle56.png') no-repeat;
 margin: 0 auto;
-background-size: 100%;
+background-size: 100% 100%;
 padding: 42px 46px;
-margin-top: -239px;
+margin-top: -187px;
 position: relative;
 display: block;
 
 }
 .detail {
-padding: 42px 46px;
+padding: 0 46px;
 }
 
 .inner_desc  p.comtitle,.inner_desc .part2 .title,.pro_content .title {
 font: 24px/31px 'Microsoft YaHei';
 text-align: center;
-padding-bottom: 32px;
+padding-bottom: 20px;
 }
 .pro_content .title {
 padding-top: 17px;

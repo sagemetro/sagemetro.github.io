@@ -57,7 +57,7 @@ color:#21A4E5
 width: 80px;
 position: relative;
 color: #9B9B9B;
-font: 16px 'Microsoft YaHei';
+font: 14px 'Microsoft YaHei';
 float: left;
 margin: 21px 24px 0 0;
 cursor: pointer;
@@ -80,8 +80,9 @@ color:#000
 span.cn {
 padding-right: 6px;
 border-right: 1px solid#979797;
+font: 12px 'Microsoft YaHei';
 }
-span.en{padding-left: 6px;}
+span.en{padding-left: 6px;font: 12px 'Microsoft YaHei';}
 .nav-content ul li.search{
 width: 148px;
 height: 26px;

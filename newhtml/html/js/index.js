@@ -74,7 +74,7 @@ function init() {
 	
 	$('.swiper-slide ul li').click(function(e){
 		var dataid = $(this).attr('data-id');
-		window.location.href='http://'+window.location.host+'/html/'+dataid+'.html';
+		window.location.href='http://'+window.location.host+'/newhtml/html/'+dataid+'.html';
 	})
 
 

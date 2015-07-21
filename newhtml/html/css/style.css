@@ -218,6 +218,7 @@ float: left;
 width: 230px;
 overflow:hidden;
 margin: 0 8.5px 0 8.5px;
+position: relative;
 }
 
 .swipebtn {

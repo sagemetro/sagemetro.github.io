@@ -10,14 +10,18 @@ function init() {
 	$('body,html').animate({scrollTop:0});
 
    $('.nav-content ul li').click(function(e){
-   	var hei1 = $('.aboutus').height()+50;
+  		 $('.nav-content ul li').removeClass('on')
+   		$(this).addClass('on')
+   		var dataid = $(this).attr('data-id');
+		window.location.href='http://'+window.location.host+'/newhtml/html/'+dataid+'.html';
+   		
+  /* 	var hei1 = $('.aboutus').height()+50;
 	var hei2 = $('.china').height()+50;
 	var hei3 = $('.texas').height()+50;
 	var scroll2 = hei1;
 	var scroll3 = hei1+hei2;
 	var scroll4 = hei1+hei2+hei3;
-   		$('.nav-content ul li').removeClass('on')
-   		$(this).addClass('on')
+   		
    		var index = $(this).index();
  	
    		switch(index){
@@ -45,7 +49,7 @@ function init() {
 				 $('body,html').animate({scrollTop:scroll4},500);
    			 break; 
    				
-   		}
+   		}*/
    })
    
    $('.china .titlecontent ul li').click(function(e){
@@ -62,7 +66,18 @@ function init() {
 		$(this).addClass('on')
 	
 	})				
-	
+	$('.navigation li:nth-child(2)').bind("mouseenter",function(e){
+		$('.navheavy').hide();
+			$('.navheavy').fadeIn()
+		
+		
+	})
+	$('.navigation li:nth-child(2)').bind("mouseout",function(){
+		
+			$('.navheavy').delay('1000').fadeOut()
+		
+	})
+
 
 	$('.swiper-slide ul li img,.proimg li img').bind("mouseenter",function(e){
 		$('.copymask').hide()

@@ -101,7 +101,7 @@ padding-left: 5px;
 width: 114px;
 float: left;
 }
-span.icon_search {
+.nav-content ul li input.icon_search {
 width: 18px;
 height: 18px;
 background: url(../images/search.png) no-repeat;
@@ -111,7 +111,15 @@ float: right;
 margin: 5px 10px 0 0;
 position: relative;
 }
-
+.imageslider img{
+    position: absolute;
+}
+.imagecontenter{
+position: relative;
+display: block;
+width: 990px;
+height: 556px;
+}
 .aboutus_content .Sagametro{
 margin: 18px 5px;
 }
@@ -533,7 +541,7 @@ padding: 5px 10px;
 ul.navheavy {
 position: absolute;
 width: 167px;
-height: 114px;
+height: 290px;
 background: rgba(0,0,0,0.7);
 text-align: center;
 top: 60px;

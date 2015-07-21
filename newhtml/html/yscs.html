@@ -16,30 +16,38 @@
 		<img src='images/Sagametro.png' class='compname' / >
 		<img src='images/yc.png' class='logo' / >
 		<ul class='navigation'>
-			<li>关于我们</li>
-			<li>国内轻资产</li>
-			<li>国内重资产</li>
-			<li>国外资产</li>
-			<li>联系我们</li>
+			<li data-id='aboutus'>关于我们</li>
+			<li data-id='china'>国内资产</li>
+			<li data-id='texa'>国外资产</li>
+			<li data-id='contact'>联系我们</li>
 			<li class='translate'><span class='cn'>中文</span><span class='en'>EN</span></li>
-			<li class='search'><input type='text' placeholder='搜索本站' /><span class='icon_search'></span></li>
+			<li class='search'>
+				<form action="http://www.baidu.com/baidu" method="get">
+				<input type='text' placeholder='搜索本站' name="word"/>
+  				<input type="submit" value="" class='icon_search'/>
+				</form>
+			</li>
 		</ul>
-		<ul class='navlignt' style='display:none'>
+		<ul class='navheavy' style='display:none'>
+			<li data-id='wst'>北京辉盛庭国际公寓</li>
+			<li data-id='yscs'>燕莎盛世大厦</li>
 			<li data-id='ht'>宏天商务楼</li>
 			<li data-id='ps'>彭胜医院</li>
 			<li data-id='xt'>信通大厦</li>
 			<li data-id='sqb'>双泉堡甲十号</li>
 		</ul>
-		<ul class='navheavy' style='display:none'>>
-			<li data-id='wst'>北京辉盛庭国际公寓</li>
-			<li data-id='yscs'>燕莎盛世大厦</li>
-		</ul>
+		
 	</div>
 </div>
 <div class='page' >
 
 	<div class='innerpage_content'>
-		<img src='images/bitmap5.jpg' width='100%' />
+			<div class='imagecontenter'>
+		<div class='imageslider'>
+			<img src='images/yansha1.jpg' width='100%' />
+			<img src='images/yansha2.jpg' width='100%' style='display:none'/>
+		</div>
+		</div>
 		<div class='inner_desc'>
 			<div class='detail'>
 				<p class='comtitle'>燕莎盛世大厦</p>

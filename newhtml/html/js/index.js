@@ -6,7 +6,10 @@ $(function() {
 });
 
 function init() {
-
+	var winhei = $(window).height()-60-40;
+	var wintop = (winhei-380)/2
+	$('.contentus').css('height',winhei-wintop);
+	$('.contentus').css('padding-top',wintop);
 	$('body,html').animate({scrollTop:0});
 
    $('.nav-content ul li').click(function(e){

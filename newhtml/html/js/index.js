@@ -9,6 +9,7 @@ function init() {
 var winwid = $(window).width();
 	if(winwid<990){
 		$('body,html').css('min-width','100%')
+		$('.aboutus .desc ').css('margin-left',0)
 	}
 	var winhei = $(window).height()-60-40;
 	var wintop = (winhei-380)/2

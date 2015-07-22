@@ -6,7 +6,10 @@ $(function() {
 });
 
 function init() {
-
+	var winwid = $(window).width();
+	if(winwid<990){
+		$('body,html').css('min-width','100%')
+	}
 	$('body,html').animate({scrollTop:0});
 	var innerimglen = $('.imageslider>img').length
 	if(innerimglen != 1){

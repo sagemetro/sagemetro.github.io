@@ -235,12 +235,13 @@ float: right;
 section.copymask {
 position: absolute;
 top: 0;
-width: 230px;
-height: 230px;
+width: 196px;
+height: 196px;
 text-align: center;
 font: 20px/44px '黑体';
 background: rgba(33,164,229,0.66);
 color: #fff;
+margin: 17px;
 }
 section.copymask p{
 position:relative;

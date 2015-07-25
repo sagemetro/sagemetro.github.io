@@ -173,12 +173,13 @@
   opacity: 0;
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
+width: 10px;
+height: 10px;
+display: inline-block;
+background: url('../images/point.png') no-repeat;
+opacity: 0.2;
+margin-right: 6px;
+background-size: 100% 100%;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
@@ -188,7 +189,7 @@
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: url('../images/onpoint.png') no-repeat;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #fff;

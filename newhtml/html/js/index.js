@@ -60,6 +60,11 @@ var winwid = $(window).width();
    		}*/
    })
    
+   $('.texas_content .more').click(function(){
+  	 	window.location.href='http://'+window.location.host+'/newhtml/html/texadetail.html';
+   })
+   
+   
    $('.china .titlecontent ul li').click(function(e){
    		var index = $(this).index();
    		$('.china .titlecontent ul li').removeClass('on')

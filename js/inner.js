@@ -16,7 +16,7 @@ function init() {
 
 
 	$('.proimg li').bind("mouseenter",function(e){
-	console.log('111')
+	
 		$('.copymask').hide()
 		$(this).addClass('hover')
 		$(this).children().next().fadeIn()
@@ -28,6 +28,7 @@ function init() {
 	})
 	
 	$('.navigation li:nth-child(2)').bind("mouseenter",function(e){
+	console.log('111')
 		$('.navheavy').hide();
 			$('.navheavy').fadeIn()
 		

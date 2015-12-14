@@ -1,7 +1,5 @@
-﻿
-$(function() {
-  init();
- 	
+﻿$(function() {
+  init(); 	
   
 });
 
@@ -18,6 +16,7 @@ function init() {
 
 
 	$('.proimg li').bind("mouseenter",function(e){
+	console.log('111')
 		$('.copymask').hide()
 		$(this).addClass('hover')
 		$(this).children().next().fadeIn()
@@ -56,7 +55,7 @@ function init() {
 }
 
 function quesanimate(num,maxnum){
-console.log(num,maxnum)
+
 	num++;
 	if(num>maxnum){
 		quesanimate(0,maxnum);	

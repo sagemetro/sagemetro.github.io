@@ -1,6 +1,0 @@
-{
-  "bind": {
-    "HEADER": "_tpl/header",
-    "FOOTER": "_tpl/footer"
-  }
-}

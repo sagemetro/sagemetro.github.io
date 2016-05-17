@@ -1,9 +1,0 @@
-{
-  "page_title": "联系我们",
-  "template": {
-    "base": "_tpl/skeleton",
-    "bind": {
-      "INNER": "_tpl/content"
-    }
-  }
-}

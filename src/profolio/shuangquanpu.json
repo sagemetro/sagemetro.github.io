@@ -1,0 +1,19 @@
+{
+  "page_title": "双泉堡甲十号",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/propertydetail"
+    }
+  },
+  "property": {
+    "name": "双泉堡甲十号",
+    "address": "朝阳区双泉堡甲十号楼",
+    "operation": "改造运营",
+    "size": "2000平米",
+    "photos": [
+      "/resources/profolio/shuangquanpu/1.jpg",
+      "/resources/profolio/shuangquanpu/2.jpg"
+    ]
+  }
+}

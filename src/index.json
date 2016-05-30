@@ -1,0 +1,10 @@
+{
+  "page_title": "睿城全球资本",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/content"
+    }
+  }
+}
+

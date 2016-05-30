@@ -1,0 +1,21 @@
+{
+  "page_title": "燕莎盛世大厦",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/propertydetail"
+    }
+  },
+  "property": {
+    "name": "燕莎盛世大厦",
+    "address": "西城区北三环中路23号",
+    "operation": "拍卖持有",
+    "size": "22000平米",
+    "desc": "项目地处北三环中路主路显赫位置，位于北三环马甸桥及安华桥中间位置，南侧紧邻北三环主路，楼体展示效果极佳。",
+    "photos": [
+      "/resources/profolio/yansha/2.jpg",
+      "/resources/profolio/yansha/1.jpg",
+      "/resources/profolio/yansha/3.jpg"
+    ]
+  }
+}

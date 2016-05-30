@@ -1,0 +1,19 @@
+{
+  "page_title": "德克萨斯物业",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/propertydetail"
+    }
+  },
+  "property": {
+    "name": "德克萨斯物业",
+    "address": "9130 Jollyville Road, Austin, Texas, 坐落在 Austin 高端 Aboretum 商区, 紧靠商业黄金三角区 (golden triangle business district).",
+    "operation": "2014年11月收购",
+    "size": "约6100 平面写字楼，12200土地面积。",
+    "desc": "2014年11月收购美国德州Austin 项目。 项目杠杆前第一年有7.14% 的回报 (cap rate). 根据世邦魏理仕 (CBRE) 预测，周围物业租金在 2015 - 2016 内会涨 15%.",
+    "photos": [
+      "/resources/profolio/texas/1.jpg"
+    ]
+  }
+}

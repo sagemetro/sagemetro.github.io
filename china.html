@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>国内资产</title>
+    <script src="js/jquery.min.js"></script>
+    <script src='js/swipe.js'></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+<div class='head' >
+	<div class='nav-content'>
+		<img src='images/Sagametro.png' class='compname' / >
+		<img src='images/yc.png' class='logo' / >
+		<ul class='navigation'>
+			<li data-id='aboutus'>关于我们</li>
+			<li data-id='china' class='on'>国内资产</li>
+			<li data-id='texa'>国外资产</li>
+			<li data-id='contact'>联系我们</li>
+			<li class='translate'><span class='cn'>中文</span><span class='en'>EN</span></li>
+			<li class='search'>
+				<form action="http://www.baidu.com/baidu" method="get">
+				<input type='text' placeholder='搜索本站' name="word"/>
+  				<input type="submit" value="" class='icon_search'/>
+				</form>
+			</li>
+		</ul>
+		<ul class='navheavy' style='display:none'>
+			<li data-id='wst'>北京辉盛庭国际公寓</li>
+			<li data-id='yscs'>燕莎盛世大厦</li>
+			<li data-id='ht'>宏天商务楼</li>
+			<li data-id='ps'>彭胜医院</li>
+			<li data-id='xt'>信通大厦</li>
+			<li data-id='sqb'>双泉堡甲十号</li>
+		</ul>
+		
+	</div>
+</div>
+
+<div class='china' id='china'>
+	<img src='images/bitmap2.jpg' width='100%' class='bg'/>
+	<div class='china_content'>
+		<div class='title'>
+			<div class='titlecontent'>
+			<div class='shadow'></div>
+				<p class='sec_title'>国内资产</p>
+				<ul>
+					<li class='light on'>轻资产</li>
+					<li class='heavy'>重资产</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class='tab0 tab' >
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul>
+							<li data-id='ht' >
+								<img src='images/htswl.png' width='100%'/>
+								<section class='copymask' style='display:none'>
+									<p class='gtitle'>宏天商务楼</p>
+									<p>东城区东直门北二里44号迆南</p>
+								</section>
+							</li>
+							<li data-id='ps'>
+								<img src='images/psyy.png' width='100%'/>
+								<section class='copymask' style='display:none'>
+								
+									<p  class='gtitle'>彭胜医院</p>
+									<p>东城区天坛东路66号</p>
+								</section>
+							</li>
+							<li data-id='xt'>
+								<img src='images/txds.png' width='100%'/>
+								<section class='copymask' style='display:none'>
+									<p  class='gtitle'>信通大厦</p>
+									<p>东城区北京站东街8号</p>
+								</section>
+							</li>
+							<li data-id='sqb'>
+								<img src='images/light4.png' width='100%'/>
+								<section class='copymask' style='display:none'>
+									<p  class='gtitle'>双泉堡甲十号</p>
+									<p>朝阳区双泉堡甲十号楼</p>
+								</section>
+							</li>
+						</ul>
+					</div>
+					
+			</div>
+			<!-- Add Pagination -->
+			<!--<div class="swiper-pagination"></div-->
+			
+		</div>
+			<div class='swipebtn' style='display:none' >
+  					<a href='javascript:;' class='leftbtn' ><img src='images/Lbtn.png' /></a>
+  					<a href='javascript:;' class='rightbtn'><img src='images/Rbtn.png' /></a>
+			</div>
+      
+    </div>
+	
+		<div class='tab1 tab'style='display:none' >
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<ul>
+								<li data-id='wst'>
+									<img src='images/hstgj.png' width='100%'/>
+									<section class='copymask' style='display:none'>
+										<p class='gtitle' style='font: 14px/55px "黑体"'>北京辉盛庭国际公寓</p>
+										<p>朝阳区东四环中路58号</p>
+									</section>
+								</li>
+								<li data-id='yscs'>
+									<img src='images/ysss.png' width='100%'/>
+									<section class='copymask' style='display:none'>
+									
+										<p  class='gtitle'>燕莎盛世大厦</p>
+										<p>北三环中路23号</p>
+									</section>
+								</li>
+								
+							</ul>
+						</div>
+					
+				</div>
+				<!-- Add Pagination -->
+				<!--<div class="swiper-pagination"></div-->
+				
+			</div>
+				<div class='swipebtn' style='display:none'>
+						<a href='javascript:;' class='leftbtn' ><img src='images/Lbtn.png' /></a>
+						<a href='javascript:;' class='rightbtn'><img src='images/Rbtn.png' /></a>
+				</div>
+		  
+		</div>
+		
+	</div>
+
+	
+</div>
+
+<div class='bottomnav'>
+	<img src='images/bottomcopy.png' />
+</div>
+</body>
+
+<script>
+/*var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+    auto: 3000,
+    continuous: true,
+    callback: function(pos) {
+
+      var i = bullets.length;
+      while (i--) {
+        bullets[i].className = ' ';
+      }
+      bullets[pos].className = 'on';
+
+    }
+});
+
+var bullets = document.getElementById('position').getElementsByTagName('li');
+
+*/
+
+</script>
+</html>

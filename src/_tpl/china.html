@@ -1,0 +1,98 @@
+<style>
+.page-body .map {
+  position: relative;
+}
+.page-body .map img {
+  width: 100%;
+}
+
+.page-body > .prop-section {
+  margin-top: 30px;
+}
+
+.page-body > .prop-section > .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #999;
+}
+
+#template {
+  display: none;
+}
+
+.map-pointer {
+  position: absolute;
+  width: 115px;
+  height: 36px;
+  background: url('resources/map-pointer.png');
+}
+
+.map-pointer > .content {
+  margin-top: 6px;
+  margin-left: 12px;
+  width: 91px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+</style>
+
+<div class="map col col-1-1">
+<img src="resources/beijing-map.jpg">
+</div>
+
+{{ $meta := import "_meta" }}
+
+<div class="prop-section col col-1-1 ">
+  <a name="heavy"></a>
+  <h2 class="title">&mdash; 重资产 &mdash;</h2>
+  <div class="section">
+  {{range $meta.profolio}}
+    {{if and (eq .type "heavy") (eq .zone "china") }}
+      <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
+    {{end}}
+  {{end}}
+  </div>
+</div>
+
+<div class="prop-section col col-1-1 ">
+  <a name="light"></a>
+  <h2 class="title">&mdash; 轻资产 &mdash;</h2>
+  <div class="section">
+  {{range $meta.profolio}}
+    {{if and (eq .type "light") (eq .zone "china") }}
+      <div class="col col-1-4">{{template "PROPERTY_CARD" .}}</div>
+    {{end}}
+  {{end}}
+  </div>
+</div>
+
+<div class="prop-section col col-1-1">&nbsp;</div>
+
+
+<div id="template">
+<div class="map-pointer">
+<div class="content"><a href="#"></a></div>
+</div>
+
+<script>
+(function() {
+  var properties = {{$meta.profolio}};
+  var map = document.querySelector('.map');
+  for (var i = 0; i < properties.length; i++) {
+    var prop = properties[i];
+    if (prop['zone'] != 'china' || prop['posX'] == null) {
+      continue;
+    }
+    var pointer = document.querySelector('#template .map-pointer').cloneNode(true);
+    map.appendChild(pointer);
+    pointer.style.top = '' + (prop['posY'] - 36) + 'px';
+    pointer.style.left = '' + (prop['posX'] - 57) + 'px';
+
+    var link = pointer.querySelector('.content a');
+    link.href = prop['href'];
+    link.innerHTML = prop['name'];
+  }
+})();
+</script>

@@ -1,0 +1,23 @@
+{
+  "page_title": "北京辉盛庭国际公寓",
+  "template": {
+    "base": "_tpl/skeleton",
+    "bind": {
+      "INNER": "_tpl/propertydetail"
+    }
+  },
+  "property": {
+    "name": "北京辉盛庭国际公寓",
+    "address": "朝阳区东四环中路58号",
+    "operation": "股份转让持有",
+    "size": "27000平米",
+    "desc": "     本项目于慈云寺桥东南角，属于北京CBD商务区东区。地理位置优越，生活配套较为完善。交通四通八达：周边紧邻地铁1号线、八通线，公交线路多达40余条。",
+    "photos": [
+      "/resources/profolio/huishengting/5.jpg",
+      "/resources/profolio/huishengting/1.jpg",
+      "/resources/profolio/huishengting/2.jpg",
+      "/resources/profolio/huishengting/3.jpg",
+      "/resources/profolio/huishengting/4.jpg"
+    ]
+  }
+}
